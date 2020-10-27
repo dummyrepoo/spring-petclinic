@@ -11,5 +11,10 @@ pipeline {
             sh 'mvn package'
          }
       }
+      stage('building'){
+         steps { 
+            sh 'docker build image -t spc:1.0 .'
+         }
+      }
    }
 }
