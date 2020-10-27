@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "gyana210/testing"
-    registryCredential = ‘dockerhub’
+    registryCredential = 'dockerhub'
   }
   agent any
   stages {
